@@ -16,7 +16,7 @@ public:
                 TreeNode*node = q.front();
                 q.pop();
                 if(level & 1){ // odd level : level & 1 means level is odd 13 & 1 = 1
-                    node->val = ans[size-1-i]; // reverse the level ans[size-1-i] is the reverse of ans[i]
+                    node->val = ans[size-1-i]; // reverse the level ans[size-1-i] is the reverse of ans[i] 
                 }
                 if(node->left){
                     q.push(node->left);
