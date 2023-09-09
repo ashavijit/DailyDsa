@@ -44,7 +44,8 @@ public:
 
        for(int i=nums.size() -1 ;i>=0;i--){
         res.push_back(Fn.query(mp[nums[i]]));
-        Fn.update(mp[nums[i]]+1,1);
+        Fn.update(mp[nums[i]]+1,1);  //  1 is added because we are using 1 based indexing in fenwick tree
+
        }
     reverse(res.begin(),res.end());
     return res;
