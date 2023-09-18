@@ -1,0 +1,1 @@
+{"name":"Local: labyrinth","url":"/home/avijit69/Desktop/DailyDsa/CSES/labyrinth.cpp","tests":[{"id":1694971425057,"input":"5 8\n########\n#.A#...#\n#.##.#B#\n#......#\n########\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/avijit69/Desktop/DailyDsa/CSES/labyrinth.cpp","group":"local","local":true}

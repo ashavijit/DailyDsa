@@ -43,7 +43,7 @@ public:
         vector<vector<int>>ans;
 
         euler_path(adj,ans,start);
-        reverse(ans.begin(),ans.end());
+        reverse(ans.begin(),ans.end()); 
         return ans;
     }
     private:
