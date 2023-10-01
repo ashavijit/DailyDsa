@@ -13,7 +13,7 @@ void precomputeLog(int n)
     bin_log[1] = 0;
     for (int i = 2; i <= n; i++)
     {
-        bin_log[i] = bin_log[i / 2] + 1;
+        bin_log[i] = bin_log[i / 2] + 1;  // log2(i) = 1 + log2(i/2)
     }
 }
 
@@ -27,9 +27,9 @@ void buildSparseTable(int n)
 
     for (int k = 1; (1 << k) <= n; k++)
     {
-        for (int i = 0; i + (1 << k) <= n; i++)
+        for (int i = 0; i + (1 << k) <= n; i++) 
         {
-            dp[i][k] = min(dp[i][k - 1], dp[i + (1 << (k - 1))][k - 1]);
+            dp[i][k] = min(dp[i][k - 1], dp[i + (1 << (k - 1))][k - 1]); 
         }
     }
 }
